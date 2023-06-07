@@ -1,0 +1,30 @@
+python -m venv env
+
+source env/Scripts/activate
+//se usa deactivate para desactivar el entorno virtual
+
+pip install django==3.1
+
+django-admin startproject djangoPage .
+
+python manage.py collectstatic
+
+
+
+
+
+python manage.py startapp category
+
+pip install pillow
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+python manage.py createsuperuser (no se puede correr en gitbash, usar:  winpty python manage.py createsuperuser)
+
+
+
+python manage.py makemigrations
+
+python manage.py migrate
